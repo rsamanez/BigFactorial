@@ -16,3 +16,12 @@ multiply(a[1..p], b[1..q], base)                            // Operands containi
     product[b_i + p] = carry                               // last digit comes from final carry
   return product
 ```
+
+## How to Compile and RUN
+```
+Compile with:
+     nasm -f elf64 -o bigFactorialNumber64.o bigFactorialNumber64.asm
+Link with:
+     ld -m elf_x86_64 -o bigFactorialNumber64 bigFactorialNumber64.o
+Run with:
+     ./bigFactorialNumber64
